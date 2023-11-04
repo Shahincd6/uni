@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University website design</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="assets/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-window-close" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">COURSE</a></li>
                     <li><a href="">BLOG</a></li>
                     <li><a href="">CONTACT</a></li>
-                </ul>
+                </ul>                                                                                                                                               
             </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
@@ -27,5 +30,45 @@
             <a href="" class="hero-btn">Visit us to know More</a>
         </div>
     </section>
+
+<!------- course -------->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae atque vero voluptate dolorem delectus commodi ipsum accusamus cum sequi deserunt odio vel ex, laboriosam fuga porro ratione quas eos!</p>
+     <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni quo, consequuntur impedit optio minus provident iste aspernatur! Voluptas quas culpa, quis quidem dolorem quod quisquam magni quos mollitia vel.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni quo, consequuntur impedit optio minus provident iste aspernatur! Voluptas quas culpa, quis quidem dolorem quod quisquam magni quos mollitia vel.</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam magni quo, consequuntur impedit optio minus provident iste aspernatur! Voluptas quas culpa, quis quidem dolorem quod quisquam magni quos mollitia vel.</p>
+        </div>
+    </div>
+
+
+
+
+
+    </section>
+
+    <!---- campus ---->
+
+ 
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right="0";
+        }
+        function hidemenu(){
+            navlinks.style.right="-200px"
+        }
+    </script>
 </body>
 </html>
